@@ -1,0 +1,902 @@
+/* Oculta el checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilo del botón */
+.menu-icon {
+    display: flex;
+    align-items: center;
+    background: #010937;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+/* Contenedor del menú */
+.menu {
+    position: relative;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header {
+    overflow-x: hidden;
+}
+/* Ocultar el menú por defecto */
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del botón */
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #010937;
+    z-index: 1;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+#menu-toggle:checked + .menu-icon + .menu-items {
+    display: block;
+}
+
+/* Estilo de los enlaces */
+.menu-items li a{
+    display: block;
+    background: #010937;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu-items li a:hover {
+    background: #dddd;
+    color: #1c31a5;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+#encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #010937;
+    flex-wrap: wrap; /* Por si se corta en móviles */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 10px;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+.logo-nombre{
+    margin-left: 2%;
+    display: flex;
+    color: #dddd;
+    font-family: "Playfair Display", serif;
+    align-items: center;
+}
+
+.nombrei{
+    margin: 0;
+}
+
+#inicio {
+    height: 93vh;
+    background-color: #1c31a5;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.titulo{
+    color: #EEEE;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5PX;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.versiculo {
+    color: #ddd;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    margin: 2%;
+    box-sizing: border-box;
+    height: auto;
+    font-style: italic;
+    line-height: 1.5;
+
+}
+
+.cita {
+    color: #ddd;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    
+}
+
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 97vh; /* asegura que ocupa toda la altura visible */
+    background: linear-gradient(to bottom, #0a2e63, #1c4cc0);
+    padding: 5px;
+    text-align: center;
+}
+
+/* Elimina desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.versobase {
+    margin: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.Button{
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 30px;
+}
+.Button--item{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    font-style: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 1s;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.Button--Servicio{
+    background-color: #ddd;
+    color: #1c31a5;
+}
+
+.Button--Contacto{
+    color: #ddd;
+    border: 2px solid #ddd;
+    
+}
+
+.Button--Contacto:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.818);
+    transform: scale(1.05);
+    background-color: #1a3d8f;
+    color: white;
+}
+
+.Button--Servicio:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.814);
+    background-color: #aaa;
+    transform: scale(1.05);
+}
+
+.subtitulo{
+    text-align: center;
+    color: #1c31a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 25px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    text-decoration: underline ;
+    margin: 0;
+}
+
+.horario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 45px;
+}
+
+.horario--item {
+    flex: 1 1 calc(33.333% - 15px); /* 3 por fila con espacio */
+    background-color: #fff;
+    min-height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 7px #00000053;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.horario--servicio, .info--title{
+    text-align: center;
+    color: #1c31a5;
+    font-size: 20px;
+}
+
+.horario--head{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: 5px 10px;
+}
+.icono{
+    margin: 0px 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* asegura que se vea redondo si no lo es */
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5); /* sombra suave */   
+}
+
+#horarios{
+    background-color: #eff6ff;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+.descripcion{
+    margin: 0px 25px;
+    font-size: 18px;
+    color: #555;
+    
+}
+.icono-reloj{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.horario--foot{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+#contacto{
+    background-color: #eff6ff;
+    flex-wrap: wrap;
+}
+.hora{
+    font-size: 1em;
+}
+.informacion, .formulario{
+    flex: 1 1 48%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 7px #00000053;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info-form, .telefono, .email, .direccion{
+    display: flex;
+    padding: 12px;
+    padding-left: 5px;
+}
+
+.info-form{
+    padding-top: 0;
+}
+
+.informacion{
+    margin: 1% 2% 2% 3%;
+}
+.formulario{
+    margin: 1% 3% 2% 2%;
+}
+
+.info--item, .info--title, .email--items, .info--descripcion{
+    margin: auto 0px;
+    text-align: left;
+}
+
+.mapa{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.info-form h2{
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #1c31a5;
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: border 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border: 1px solid #1c31a5;
+    outline: none;
+}
+
+.form--button {
+    background-color: #1c31a5;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form--button:hover {
+    background-color: #0e1f6d;
+    transform: scale(1.03);
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffffff; /* fondo más definido */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    gap: 25px;
+    margin: 2.5%;
+}
+
+.redes__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #fff; /* más visible */
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.redes__item:hover {
+    background-color: #dceeff;
+}
+
+.redes__item img.icono {
+    width: 40px;
+    height: 40px;
+}
+
+.redes__item a {
+    color: #1c31a5;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.redes__item a:hover {
+    text-decoration: underline;
+}
+
+.sub--mod{
+    padding-bottom: 5px;
+}
+.footer {
+    background-color: #010937;
+    color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer__bloque {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.footer__logo {
+    width: 45px;
+    height: 45px;
+}
+
+.footer__nombre {
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+}
+
+.footer__versiculo {
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+    color: #ccc;
+}
+
+.footer__redes a,
+.footer__bloque a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.footer__redes a:hover,
+.footer__bloque a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__titulo {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer__copy {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+}
+.footer__col {
+    flex: 1 1 30%;
+    min-width: 240px;
+    margin-bottom: 20px;
+}
+
+.footer__logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__logo {
+    width: 45px;
+    height: 45px;
+}
+
+.footer__nombre {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.footer__versiculo {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.body{
+    height: 100vh;
+}
+.transmision {
+    padding: 40px 20px;
+    background-color: #eff6ff;
+    text-align: center;
+}
+
+.transmision__video {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.transmision__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+#encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+main {
+  margin-top: 40px; /* Ajusta según la altura real del header */
+}
+.descripcion {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.footer__redes a{
+    padding-right: 7px;
+}
+.form--button{
+    font-size: 18px;
+}
+
+iframe{
+    width: 100%;
+    height: 80vh;
+
+}
+
+.youtube-playlist {
+    padding: 20px;
+    background-color: #eff6ff;
+    text-align: center;
+}
+
+.playlist__titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1c31a5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.playlist__videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.playlist__video iframe {
+    width: 100%;
+    height: 123px;
+    border-radius: 10px;
+}
+.playlist__titulo-video {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #1c31a5;
+    font-family: Arial, sans-serif;
+}
+.playlist__boton {
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #1c31a5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.playlist__boton:hover {
+    background-color: #0f1e7a;
+}
+
+.info--item, .info--title{
+    font-size: 17px;
+}
+.playlist__video {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.thumbnail-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.678);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px 15px;
+    pointer-events: none;
+}
+
+.playlist__titulo-video {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+}
+.playlist__video iframe,
+.video-wrapper iframe {
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play-button-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #0a2e63, #1c4cc0);
+}
+
+
+@media (max-width: 600px) {
+    #encabezado {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0 5px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nombrei {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .versiculo {
+        font-size: 16px;
+        margin: 4%px;
+        height: 80%;
+    }
+
+    .cita {
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .menu-items {
+        width: 100%;
+    }
+
+    .menu__items {
+    width: 100vw; /* Asegura que ocupe el ancho total de la pantalla */
+    right: 0;
+    left: 0; /* Ojo: esto evita el desborde si el menú depende del lado izquierdo */
+    top: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    }
+
+    .menu__item a {
+    font-size: 16px;
+    padding: 12px;
+    }
+
+    .header {
+    flex-wrap: nowrap;
+    height: auto; /* Esto puede dejarlo dinámico */
+    padding: 5px 10px;
+    }
+
+    .logo-nombre {
+    flex-wrap: nowrap;
+    gap: 5px;
+    height: 40px;
+    }
+
+    .menu__icon {
+    padding: 5px 0;
+    font-size: 14px;
+    }
+
+    .menu{
+        width: 25%;
+    }
+
+    .Button {
+    font-size: 16px;
+    padding: 12px 24px;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    }
+
+    .subtitulo {
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    .info-form {
+    flex-direction: column;
+    padding: 0 10px;
+    }
+
+    .informacion,
+    .formulario {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .horario--servicio{
+        font-size: 18px;
+    }
+
+    .informacion .subtitulo{
+        font-size: 22px;
+    }
+
+    .info--title{
+        font-size: 18px;
+    }
+
+    .form--button{
+        font-size: 14px;
+    }
+
+    .icono
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .icono-reloj{
+        width: 20px;
+        height: 20px;
+    }
+
+    .hora{
+        font-size: 16px;
+    }
+
+    .footer__logo-nombre h2{
+        font-size: 14px;
+    }
+
+    .footer__copy{
+        font-size: 13px;
+    }
+
+    .footer__redes h3, .footer__bloque h2{
+        font-size: 12px;
+    }
+
+    .footer__bloque{
+        display: inline;
+    }
+    .footer__bloque a, .footer__redes{
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    .footer__versiculo{
+        font-size: 12px;
+    }
+    .footer__logo{
+        width: 30px;
+        height: 30px;
+    }
+    .footer{
+        padding: 15px;
+    }
+
+    .footer__bloque{
+    padding-left: 5px;
+}
+}
