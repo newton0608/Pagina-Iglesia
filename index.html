@@ -1,305 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Iglesia de Cristo Palabra Viva y Eficaz</title>
-      <link rel="icon" href="favicon.png" type="image/png">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia de Cristo Palabra Viva y Eficaz</title>
+    <link rel="icon" href="Imagenes/logo-pequeno.png" type="image/png">
+    <meta name="description" content="Iglesia de Cristo Palabra Viva y Eficaz en Barberena, Santa Rosa. Formación bíblica, discipulado virtual, servicios congregacionales y transmisiones en vivo.">
+    <meta name="keywords" content="Iglesia Cristiana en Barberena, Iglesia en Santa Rosa, Iglesia de Cristo, Ministerios Ebenezer, Iglesia Palabra Viva y Eficaz, Discipulado Bíblico, Iglesia Familiar, Iglesia Evangélica Guatemala">
+    <meta name="geo.region" content="GT-SR">
+    <meta name="geo.placename" content="Barberena, Santa Rosa, Guatemala">
+    <meta name="geo.position" content="14.3025;-90.3610">
+    <meta name="ICBM" content="14.3025, -90.3610">
+    <meta property="og:title" content="Iglesia de Cristo Palabra Viva y Eficaz">
+    <meta property="og:description" content="Ministerio cristiano en Barberena, Santa Rosa. Formación bíblica, discipulado y servicios para toda la familia.">
+    <meta property="og:image" content="https://palabravivayeficaz.org/Imagenes/logo-grande.png">
+    <meta property="og:url" content="https://palabravivayeficaz.org">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="dist/styles.css">
+    <script defer src="scripts/site.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Church",
+            "name": "Iglesia de Cristo Palabra Viva y Eficaz",
+            "description": "Ministerio cristiano en Barberena, Santa Rosa. Formación bíblica, enseñanza doctrinal y discipulado.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "6ta calle 6-58 Zona 1",
+                "addressLocality": "Barberena",
+                "addressRegion": "Santa Rosa",
+                "addressCountry": "GT"
+            },
+            "url": "https://palabravivayeficaz.org",
+            "image": "https://palabravivayeficaz.org/Imagenes/logo-grande.png"
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-slate-900 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/90 shadow-lg shadow-slate-950/20 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <a href="#inicio" class="flex items-center gap-3">
+                <img class="h-14 w-40 object-contain object-left" src="Imagenes/logo-pequeno.png" alt="Iglesia de Cristo Palabra Viva y Eficaz">
+            </a>
 
-      <!-- SEO -->
-      <meta name="description" content="La Iglesia de Cristo Palabra Viva y Eficaz en Barberena, Santa Rosa, es un ministerio cristiano afiliado a Ministerios Ebenezer Guatemala. Ofrecemos formación bíblica, enseñanza doctrinal, discipulado y servicios dominicales para toda la familia.">
-      <meta name="keywords" content="Iglesia Cristiana en Barberena, Iglesia en Santa Rosa, Iglesia de Cristo, Ministerios Ebenezer, Iglesia Palabra Viva y Eficaz, Discipulado Bíblico, Iglesia Familiar, Iglesia Evangélica Guatemala">
-      
-      <!-- SEO Local -->
-      <meta name="geo.region" content="GT-SR">
-      <meta name="geo.placename" content="Barberena, Santa Rosa, Guatemala">
-      <meta name="geo.position" content="14.3025;-90.3610">
-      <meta name="ICBM" content="14.3025, -90.3610">
+            <button class="inline-flex items-center rounded-md border border-white/15 px-3 py-2 text-sm font-semibold text-white lg:hidden" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-menu">
+                Menu
+            </button>
 
-      <!-- Open Graph -->
-      <meta property="og:title" content="Iglesia de Cristo Palabra Viva y Eficaz">
-      <meta property="og:description" content="Ministerio cristiano en Barberena, Santa Rosa. Formación bíblica, discipulado y servicios doctrinales para toda la familia.">
-      <meta property="og:image" content="https://palabravivayeficaz.org/imagenes/Palabra.png">
-      <meta property="og:url" content="https://palabravivayeficaz.org">
-      <meta property="og:type" content="website">
+            <nav id="main-menu" class="absolute left-4 right-4 top-20 hidden rounded-lg border border-white/10 bg-slate-950 p-3 shadow-xl lg:static lg:flex lg:items-center lg:gap-1 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" data-nav-menu>
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#horarios">Horarios</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" href="Enlaces/Transmision.html">Transmisión en vivo</a>
+                <a class="nav-link" href="Enlaces/Discipulado.html">Discipulado virtual</a>
+            </nav>
+        </div>
+    </header>
 
-      <!-- Schema.org -->
-      <script type="application/ld+json">
-         {
-         "@context": "https://schema.org",
-         "@type": "Church",
-         "name": "Iglesia de Cristo Palabra Viva y Eficaz",
-         "description": "Ministerio cristiano en Barberena, Santa Rosa. Formación bíblica, enseñanza doctrinal y discipulado.",
-         "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "6ta calle 6-58 Zona 1",
-            "addressLocality": "Barberena",
-            "addressRegion": "Santa Rosa",
-            "addressCountry": "GT"
-         },
-         "url": "https://palabravivayeficaz.org",
-         "image": "https://palabravivayeficaz.org/imagenes/Palabra.png"
-         }
-      </script>
+    <main>
+        <section id="inicio" class="relative isolate min-h-screen overflow-hidden bg-slate-950 pt-24 text-white">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.22),transparent_34%),linear-gradient(135deg,#020617_0%,#082f49_48%,#111827_100%)]"></div>
+            <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-stone-50 to-transparent"></div>
 
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-   <script>
-   particlesJS("particles-js", {
-      particles: {
-         number: { value: 40, density: { enable: true, value_area: 800 } },
-         color: { value: "#ffffff" },
-         shape: { type: "circle" },
-         opacity: { value: 0.5 },
-         size: { value: 3, random: true },
-         line_linked: {
-         enable: true,
-         distance: 150,
-         color: "#ffffff",
-         opacity: 0.4,
-         width: 1
-         },
-         move: { enable: true, speed: 2, direction: "none", random: false }
-      },
-      interactivity: {
-         detect_on: "canvas",
-         events: {
-         onhover: { enable: true, mode: "repulse" },
-         onclick: { enable: false }
-         }
-      },
-      retina_detect: true
-   });
-   </script>
-   <body>
+            <div class="mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
+                <div class="max-w-3xl">
+                    <p class="mb-5 inline-flex rounded-full border border-amber-300/30 bg-white/10 px-4 py-2 text-sm font-semibold uppercase text-amber-200">
+                        Barberena, Santa Rosa
+                    </p>
+                    <h1 class="font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+                        Iglesia de Cristo <span class="block text-amber-300">Palabra Viva y Eficaz</span>
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+                        Un lugar para adorar, aprender la Palabra y crecer en familia bajo la luz del entendimiento de Dios.
+                    </p>
+                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                        <a class="btn-primary" href="Enlaces/Transmision.html">Ver transmisión</a>
+                        <a class="btn-secondary" href="#horarios">Nuestros servicios</a>
+                    </div>
+                </div>
 
-      <!--Encabezado-->
-      <div id="encabezado">
-         <div class="logo-nombre">
-            <img class="logo" src="Imagenes/PalabraP.png" alt="Logo Palabra Viva y Eficaz">   
-            <h2 class="nombrei">Palabra Viva y Eficaz</h2>
-         </div>
-            
-         <nav class="menu">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"> Menú &#9776;</label>
-
-            <ul class="menu-items">
-               <li><a href="#inicio">Inicio</a></li>
-               <li><a href="#horarios">Horarios</a></li>
-               <li><a href="#contacto">Contacto</a></li>
-               <li><a href="Enlaces/Transmision.html">Transmisión en Vivo</a></li>
-               <li><a href="Enlaces/Discipulado.html">Discipulado Virtual</a></li>
-            </ul>
-         </nav>
-      </div>
-         
-      <main>   
-         <!--Inicio-->
-         <div id="inicio">
-            <h1 class="titulo">Iglesia de Cristo Palabra Viva y Eficaz</h1>
-            <div class="versobase">
-               <p class="versiculo">" Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos; penetra hasta la división del alma y del espíritu, de las coyunturas y los tuétanos, y es poderosa para discernir los pensamientos y las intenciones del corazón."</p>
-               <h2 class="cita" >Hebreos 4:12 RV1960</h2>
+                <div class="relative mx-auto w-full max-w-md">
+                    <div class="absolute inset-6 rounded-full bg-amber-300/20 blur-3xl"></div>
+                    <div class="relative rounded-2xl border border-amber-200/20 bg-white/10 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur">
+                        <img class="mx-auto w-full object-contain drop-shadow-2xl" src="Imagenes/logo-grande.png" alt="Logo de la Iglesia de Cristo Palabra Viva y Eficaz">
+                        <div class="mt-6 rounded-xl border border-white/10 bg-slate-950/70 p-5">
+                            <p class="font-serif text-base italic leading-7 text-slate-100">
+                                "Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos..."
+                            </p>
+                            <p class="mt-3 text-sm font-semibold text-amber-200">Hebreos 4:12</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="Button">
-               <a href="#horarios" class="Button Button--item Button--Servicio">Nuestros Servicios</a>
-               <a href="#contacto" class="Button Button--item Button--Contacto">Contáctanos</a>
+        </section>
+
+        <section class="bg-stone-50 py-12">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-4 rounded-2xl border border-amber-200 bg-white p-5 shadow-sm md:grid-cols-3 md:items-center">
+                    <div>
+                        <p class="text-sm font-semibold uppercase text-amber-700">Próxima reunión</p>
+                        <h2 class="mt-1 font-serif text-2xl font-bold text-slate-950" data-next-meeting-name>Servicio Devocional</h2>
+                    </div>
+                    <p class="text-slate-600" data-next-meeting-details aria-live="polite">Domingo 10:00 AM · 6ta calle 6-58 Zona 1, Barberena</p>
+                    <a class="btn-dark md:justify-self-end" href="#contacto" data-next-meeting-link>Cómo llegar</a>
+                </div>
             </div>
-         </div>
+        </section>
 
-         <!--Horarios-->
-         <div id="horarios">
-            <h2 class="subtitulo">Nuestros Servicios</h2>
-            <div class="horario">
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/1.png">
-                     <h3 class="horario--servicio">Discipulado Virtual</h3>
-                  </div>
-                  <p class="descripcion">"Impartiendo la luz del entendimiento" - Un tiempo para profundizar en la palabra de Dios y crecer en conocimiento espiritual.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Lunes 7:30 PM</h3>
-                  </div>
-                  
-               </div>
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/2.png">
-                     <h3 class="horario--servicio">Escuela Profética</h3>
-                  </div>
-                  <p class="descripcion">Un espacio de formación bíblica y espiritual, donde se imparten fundamentos doctrinales sobre el ministerio profético y sus dones.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Miércoles 7:00 PM</h3>
-                  </div>
-               </div>
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/3.png">
-                     <h3 class="horario--servicio">Familiar Profético</h3>
-                  </div>
-                  <p class="descripcion">Un servicio especial para toda la familia donde experimentamos la presencia de Dios y el mover profético.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Viernes 7:00 PM</h3>
-                  </div>
-                  
-               </div>
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/4.png">
-                     <h3 class="horario--servicio">Generación Peniel</h3>
-                  </div>
-                  <p class="descripcion">Un servicio con enfoque hacia la juventud, donde jóvenes y adultos se unen en un ambiente de adoración, palabra y comunión con Dios.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Sábado 6:30 PM</h3>
-                  </div>
-                  
-               </div>
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/5.png">
-                     <h3 class="horario--servicio">Servicio Devocional</h3>
-                  </div>
-                  <p class="descripcion">Un tiempo de adoración congregacional y edificación mediante la exposición de la palabra profética, revelada y escatológica, que nos prepara como Iglesia para los tiempos venideros.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Domingo 10:00 AM</h3>
-                  </div>
-               </div>
-               <div class="horario--item">
-                  <div class="horario--head">
-                     <img class="icono" src="Imagenes/6.png">
-                     <h3 class="horario--servicio">Ministerio de Niños</h3>
-                  </div>
-                  <p class="descripcion">Un espacio donde los niños aprenden sobre Dios a través de actividades y lecciones adaptadas a su edad.</p>
-                  <div class="horario--foot">
-                     <img class="icono-reloj" src="Imagenes/12.png">
-                     <h3 class="hora">Durante los servicios devocionales</h3>
-                  </div>
-               </div>
+        <section id="horarios" class="bg-stone-50 py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="section-kicker">Vida congregacional</p>
+                    <h2 class="section-title">Nuestros servicios</h2>
+                    <p class="mt-4 text-lg text-slate-600">Reuniones para la familia, discipulado, juventud y crecimiento espiritual.</p>
+                </div>
+
+                <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/1.png" alt="">
+                        <h3>Discipulado Virtual</h3>
+                        <p>"Impartiendo la luz del entendimiento". Un tiempo para profundizar en la Palabra y crecer en conocimiento espiritual.</p>
+                        <span>Lunes 7:30 PM</span>
+                    </article>
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/2.png" alt="">
+                        <h3>Escuela Profética</h3>
+                        <p>Formación bíblica y espiritual donde se imparten fundamentos doctrinales sobre el ministerio profético y sus dones.</p>
+                        <span>Miércoles 7:00 PM</span>
+                    </article>
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/3.png" alt="">
+                        <h3>Familiar Profético</h3>
+                        <p>Un servicio especial para toda la familia donde experimentamos la presencia de Dios y el mover profético.</p>
+                        <span>Viernes 7:00 PM</span>
+                    </article>
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/4.png" alt="">
+                        <h3>Generación Peniel</h3>
+                        <p>Un servicio para jóvenes y adultos en un ambiente de adoración, palabra y comunión con Dios.</p>
+                        <span>Sábado 6:30 PM</span>
+                    </article>
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/5.png" alt="">
+                        <h3>Servicio Devocional</h3>
+                        <p>Adoración congregacional y edificación mediante la exposición de la Palabra profética, revelada y escatológica.</p>
+                        <span>Domingo 10:00 AM</span>
+                    </article>
+                    <article class="service-card">
+                        <img class="service-icon" src="Imagenes/6.png" alt="">
+                        <h3>Ministerio de Niños</h3>
+                        <p>Un espacio donde los niños aprenden sobre Dios a través de actividades y lecciones adaptadas a su edad.</p>
+                        <span>Durante servicios devocionales</span>
+                    </article>
+                </div>
             </div>
-         </div>
-            
-         <!--Contacto-->
-      <div id="contacto">
-         
-            <h2 class="subtitulo">Contáctanos</h2>
-         
-         <div class="info-form">
-            <div class="informacion contacto--item">
-               <h2 class="subtitulo">Información de Contacto</h2>
-               <div class="telefono">
-                  <img class="icono" src="Imagenes/7.png">
-                  <div class="telefono--items">
-                  <h3 class="info--title info--item">Teléfonos</h3>
-                  <p class="descripcion info--descripcion info--item">+502 7887 1569 / +502 4147 0498</p>
-               </div>
+        </section>
+
+        <section class="bg-slate-950 py-20 text-white">
+            <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+                <div>
+                    <p class="section-kicker text-amber-200">Nuestra iglesia</p>
+                    <h2 class="font-serif text-3xl font-bold sm:text-4xl">Crezcamos, aprendamos y vivamos Su verdad.</h2>
+                </div>
+                <div class="space-y-5 text-lg leading-8 text-slate-300">
+                    <p>
+                        Somos una iglesia cristiana ubicada en Barberena, Santa Rosa, comprometida con la enseñanza bíblica, la adoración y la edificación de las familias.
+                    </p>
+                    <p>
+                        También compartimos transmisiones en vivo y discipulado virtual para que la Palabra llegue más allá del templo.
+                    </p>
+                </div>
             </div>
-               <div class="email">
-                  <img class="icono" src="Imagenes/9.png">
-                  <div class="email--items">
-                     <h3 class="info info--title">Email</h3>
-                     <p class="descripcion info--descripcion">ebenezerbarberena2067@gmail.com</p>
-                  </div>
-                  
-               </div>
-               <div class="direccion">
-                  <img class="icono" src="Imagenes/8.png">
-                  <div class="direccion--items">
-                     <h3 class="info info--title">Dirección</h3>
-                     <p class="descripcion info--descripcion">6ta calle 6 - 58 zona 1, Barberena Santa Rosa, Cerrito de la Cruz</p>
-                  </div>
-               </div>
-               <div>
-                  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.264697213248!2d-90.3603078999845!3d14.304600476670476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589b5b39103319f%3A0x4c288b2c45ee4e94!2sIglesia%20de%20Cristo%20Ebenezer%20Barberena!5e0!3m2!1ses-419!2sgt!4v1751310648328!5m2!1ses-419!2sgt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
+        </section>
+
+        <section id="contacto" class="bg-stone-50 py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="section-kicker">Visítanos</p>
+                    <h2 class="section-title">Contacto y ubicación</h2>
+                    <p class="mt-4 text-lg text-slate-600">Escríbenos, encuentra la dirección o visita nuestras redes oficiales.</p>
+                </div>
+
+                <div class="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <div class="space-y-6">
+                            <div class="contact-row">
+                                <img src="Imagenes/7.png" alt="">
+                                <div>
+                                    <h3>Teléfonos</h3>
+                                    <p>+502 7887 1569 / +502 4147 0498</p>
+                                </div>
+                            </div>
+                            <div class="contact-row">
+                                <img src="Imagenes/9.png" alt="">
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>ebenezerbarberena2067@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-row">
+                                <img src="Imagenes/8.png" alt="">
+                                <div>
+                                    <h3>Dirección</h3>
+                                    <p>6ta calle 6-58 zona 1, Barberena Santa Rosa, Cerrito de la Cruz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <iframe class="mt-8 h-80 w-full rounded-xl border-0 shadow-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.264697213248!2d-90.3603078999845!3d14.304600476670476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589b5b39103319f%3A0x4c288b2c45ee4e94!2sIglesia%20de%20Cristo%20Ebenezer%20Barberena!5e0!3m2!1ses-419!2sgt!4v1751310648328!5m2!1ses-419!2sgt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de la iglesia"></iframe>
+                    </div>
+
+                    <form action="https://formsubmit.co/ebenezerbarberena2067@gmail.com" method="POST" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-slate-950">Envíanos un mensaje</h3>
+                        <div class="mt-6 grid gap-5">
+                            <label class="field-label">
+                                Nombre
+                                <input class="field" type="text" name="nombre" placeholder="Nombre Apellido" required>
+                            </label>
+                            <label class="field-label">
+                                Número de telefono
+                                <input class="field" type="text" name="telefono" placeholder="12345678">
+                            </label>
+                            <label class="field-label">
+                                Asunto
+                                <input class="field" type="text" name="asunto" placeholder="Ej. petición de oración">
+                            </label>
+                            <label class="field-label">
+                                Tu mensaje
+                                <textarea class="field min-h-36 resize-y" name="mensaje" rows="6" placeholder="Tu mensaje o motivo de oración" required></textarea>
+                            </label>
+                        </div>
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
+                        <input type="hidden" name="_template" value="box">
+                        <button type="submit" class="btn-primary mt-6 w-full justify-center">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    <a class="social-card" href="https://www.facebook.com/IglesiadeCristoPalabraVivayEficaz/" target="_blank" rel="noreferrer">
+                        <img src="Imagenes/10.png" alt="">
+                        <span>Pagina de la iglesia</span>
+                    </a>
+                    <a class="social-card" href="https://www.facebook.com/PastorLuisAifanD/" target="_blank" rel="noreferrer">
+                        <img src="Imagenes/10.png" alt="">
+                        <span>Perfil del Pastor</span>
+                    </a>
+                    <a class="social-card" href="https://www.facebook.com/Generacionpeniel.ministeriosebenezer" target="_blank" rel="noreferrer">
+                        <img src="Imagenes/10.png" alt="">
+                        <span>Generación Peniel</span>
+                    </a>
+                    <a class="social-card" href="https://www.youtube.com/channel/UC9t4SN1s5jdO0KJBUFflxJQ" target="_blank" rel="noreferrer">
+                        <img src="Imagenes/11.png" alt="">
+                        <span>Canal de YouTube</span>
+                    </a>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <form action="https://formsubmit.co/ebenezerbarberena2067@gmail.com" method="POST" class="formulario contacto--item">
-               <h2 class="subtitulo">Envíanos un Mensaje</h2>
-
-               <div>
-                  <label class="info info--title">Nombre</label>
-                  <input type="text" name="nombre" placeholder="Nombre Apellido" required>
-               </div>
-
-               <div>
-                  <label class="info info--title">Número de teléfono</label>
-                  <input type="text" name="telefono" placeholder="12345678">
-               </div>
-
-               <div>
-                  <label class="info info--title">Asunto</label>
-                  <input type="text" name="asunto" placeholder="Ej. Petición de oración">
-               </div>
-
-               <div>
-                  <label class="info info--title">Tu mensaje</label>
-                  <textarea name="mensaje" rows="8" placeholder="Tu mensaje o motivo de oración" required></textarea>
-               </div>
-
-               <!-- Opcionales -->
-               <input type="hidden" name="_captcha" value="true">
-               <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
-               <input type="hidden" name="_template" value="box">
-
-               <button type="submit" class="form--button">Enviar Mensaje</button>
-            </form>
-         </div>
-            <div class="contacto--item">
-               <h2 class="subtitulo sub--mod">Síguenos</h2>
-               <div class="redes">
-               <div class="redes__item">
-                  <img class="icono" src="Imagenes/10.png">
-                  <a href="https://www.facebook.com/IglesiadeCristoPalabraVivayEficaz/" target="_blank">Página de la iglesia</a>
-               </div>
-               <div class="redes__item">
-                  <img class="icono" src="Imagenes/10.png">
-                  <a href="https://www.facebook.com/PastorLuisAifanD/" target="_blank">Perfil del Pastor</a>
-               </div>
-               <div class="redes__item">
-                  <img class="icono" src="Imagenes/10.png">
-                  <a href="https://www.facebook.com/Generacionpeniel.ministeriosebenezer" target="_blank">Página de Jóvenes</a>
-               </div>
-               <div class="redes__item">
-                  <img class="icono" src="Imagenes/11.png">
-                  <a href="https://www.youtube.com/channel/UC9t4SN1s5jdO0KJBUFflxJQ" target="_blank">Canal de YouTube</a>
-               </div>
+    <footer class="bg-slate-950 text-slate-300">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr] lg:px-8">
+            <div>
+                <div class="flex items-center gap-3">
+                    <img class="h-16 w-44 object-contain object-left" src="Imagenes/logo-pequeno.png" alt="Iglesia de Cristo Palabra Viva y Eficaz">
+                </div>
+                <p class="mt-4 max-w-xl text-sm leading-6">"Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos..."</p>
             </div>
-         </div>
-      </div>
-   </main>
-      <footer class="footer">
-         <div class="footer__col">
-            <div class="footer__logo-nombre">
-               <img src="Imagenes/PalabraP.png" alt="Logo Palabra Viva y Eficaz" class="footer__logo">
-               <h2 class="footer__nombre">Palabra Viva y Eficaz</h2>
+            <div>
+                <h3 class="font-semibold text-white">Enlaces rápidos</h3>
+                <div class="mt-4 grid gap-2 text-sm">
+                    <a class="footer-link" href="#inicio">Inicio</a>
+                    <a class="footer-link" href="#horarios">Horarios</a>
+                    <a class="footer-link" href="#contacto">Contacto</a>
+                    <a class="footer-link" href="Enlaces/Transmision.html">Transmisión en vivo</a>
+                    <a class="footer-link" href="Enlaces/Discipulado.html">Discipulado virtual</a>
+                </div>
             </div>
-            <p class="footer__versiculo">"Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos..."</p>
-            <div class="footer__redes">
-               <h3 class="footer__titulo">Redes Sociales</h3>
-               <a href="https://www.facebook.com/IglesiadeCristoPalabraVivayEficaz/" target="_blank">Página de la iglesia</a>
-               <a href="https://www.facebook.com/PastorLuisAifanD/" target="_blank">Perfil del Pastor</a>
-               <a href="https://www.facebook.com/Generacionpeniel.ministeriosebenezer" target="_blank">Página de Jóvenes</a>
-               <a href="https://www.youtube.com/channel/UC9t4SN1s5jdO0KJBUFflxJQ" target="_blank">Canal de YouTube</a>
-            </div>
-         </div>
-
-         <div class="footer__bloque">
-            <h2 class="footer__titulo">Enlaces Rápidos</h2>
-            <a href="#inicio">Inicio</a>
-            <a href="#horarios">Horarios</a>
-            <a href="#contacto">Contacto</a>
-         </div>
-
-         <div class="footer__copy">
-            <p>© 2025 Iglesia de Cristo Palabra Viva y Eficaz. Todos los derechos reservados.</p>
-         </div>
-      </footer>
-   </body>
+        </div>
+        <div class="border-t border-white/10 px-4 py-5 text-center text-sm text-slate-400">
+            © 2026 Iglesia de Cristo Palabra Viva y Eficaz. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
 </html>

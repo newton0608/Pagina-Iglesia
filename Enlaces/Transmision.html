@@ -1,73 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transmisión en vivo</title>
-    <link rel="icon" href="../Imagenes/Palabra.png" type="image/png">
-    <meta name="description" content="Esta pagina web trata sobre una iglesia cristiana llamada Iglesia de Cristo Palabra Viva y Eficaz ubicada en Barberena Santa Rosa que forma parte de Ministerios Ebenezer Guatemala">
-    <meta name="keywords" content="Iglesia Cristiana, Iglesia Barberena, Iglesia Santa Rosa, Iglesia Ebenezer, Ebenezer Barberena, Iglesia, Palabra Viva y Eficaz, Iglesia de Cristo">
-    <link rel="stylesheet" href="../styles.css">
+    <title>Transmisión en vivo | Palabra Viva y Eficaz</title>
+    <link rel="icon" href="../Imagenes/logo-pequeno.png" type="image/png">
+    <meta name="description" content="Transmisión en vivo de la Iglesia de Cristo Palabra Viva y Eficaz en Barberena, Santa Rosa.">
+    <meta name="keywords" content="Transmisión Iglesia Palabra Viva y Eficaz, Iglesia Barberena en vivo, Iglesia de Cristo Barberena">
+    <link rel="stylesheet" href="../dist/styles.css">
+    <script defer src="../scripts/site.js"></script>
 </head>
-<body class="body">
-    <!--Encabezado-->
-    <div id="encabezado">
-        <div class="logo-nombre">
-            <img class="logo" src="../Imagenes/PalabraP.png" alt="Logo Palabra Viva y Eficaz">   
-            <h2 class="nombrei">Palabra Viva y Eficaz</h2>
-        </div>
-            
-        <nav class="menu">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"> Menú &#9776;</label>
+<body class="bg-stone-50 text-slate-900 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/90 shadow-lg shadow-slate-950/20 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <a href="../index.html#inicio" class="flex items-center gap-3">
+                <img class="h-14 w-40 object-contain object-left" src="../Imagenes/logo-pequeno.png" alt="Iglesia de Cristo Palabra Viva y Eficaz">
+            </a>
 
-        <ul class="menu-items">
-            <li><a href="../index.html#inicio">Inicio</a></li>
-            <li><a href="../index.html#horarios">Horarios</a></li>
-            <li><a href="../index.html#contacto">Contacto</a></li>
-            <li><a href="Transmision.html">Transmisión en Vivo</a></li>
-            <li><a href="Discipulado.html">Discipulado Virtual</a></li>
-        </ul>
-        </nav>
-    </div>
-    <main class="PG_TRANSMISION">
-        <section id="transmision" class="transmision">
-            <h2 class="subtitulo">Transmisión en Vivo</h2>
-            <div class="transmision__video">
-                <iframe 
-                src="https://www.youtube.com/embed/live_stream?channel=UC9t4SN1s5jdO0KJBUFflxJQ" 
-                frameborder="0" 
-                allowfullscreen 
-                allow="autoplay; encrypted-media">
-                </iframe>
+            <button class="inline-flex items-center rounded-md border border-white/15 px-3 py-2 text-sm font-semibold text-white lg:hidden" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-menu">
+                Menu
+            </button>
+
+            <nav id="main-menu" class="absolute left-4 right-4 top-20 hidden rounded-lg border border-white/10 bg-slate-950 p-3 shadow-xl lg:static lg:flex lg:items-center lg:gap-1 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" data-nav-menu>
+                <a class="nav-link" href="../index.html#inicio">Inicio</a>
+                <a class="nav-link" href="../index.html#horarios">Horarios</a>
+                <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                <a class="nav-link" href="Transmision.html">Transmisión en vivo</a>
+                <a class="nav-link" href="Discipulado.html">Discipulado virtual</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="min-h-screen pt-20">
+        <section class="relative isolate overflow-hidden bg-slate-950 py-20 text-white">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.20),transparent_34%),linear-gradient(135deg,#020617_0%,#082f49_52%,#111827_100%)]"></div>
+            <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+                <p class="section-kicker text-amber-200">Culto en línea</p>
+                <h1 class="mt-3 font-serif text-4xl font-bold sm:text-5xl">Transmisión en vivo</h1>
+                <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+                    Acompáñanos en cada servicio desde nuestro canal oficial de YouTube.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
+                    <div class="aspect-video bg-slate-900">
+                        <iframe
+                            class="h-full w-full"
+                            src="https://www.youtube.com/embed/live_stream?channel=UC9t4SN1s5jdO0KJBUFflxJQ"
+                            title="Transmisión en vivo de Palabra Viva y Eficaz"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="grid gap-4 p-6 md:grid-cols-[1fr_auto] md:items-center">
+                        <div>
+                            <h2 class="font-serif text-2xl font-bold text-slate-950">Iglesia de Cristo Palabra Viva y Eficaz</h2>
+                            <p class="mt-2 text-slate-600">Si el video no aparece, visita el canal oficial de YouTube.</p>
+                        </div>
+                        <a class="btn-dark" href="https://www.youtube.com/channel/UC9t4SN1s5jdO0KJBUFflxJQ" target="_blank" rel="noreferrer">Abrir YouTube</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__col">
-            <div class="footer__logo-nombre">
-                <img src="../Imagenes/PalabraP.png" alt="Logo Palabra Viva y Eficaz" class="footer__logo">
-                <h2 class="footer__nombre">Palabra Viva y Eficaz</h2>
+
+    <footer class="bg-slate-950 text-slate-300">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr] lg:px-8">
+            <div>
+                <div class="flex items-center gap-3">
+                    <img class="h-16 w-44 object-contain object-left" src="../Imagenes/logo-pequeno.png" alt="Iglesia de Cristo Palabra Viva y Eficaz">
+                </div>
+                <p class="mt-4 max-w-xl text-sm leading-6">"Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos..."</p>
             </div>
-            <p class="footer__versiculo">"Porque la palabra de Dios es viva y eficaz, y más cortante que cualquier espada de dos filos..."</p>
-            <div class="footer__redes">
-                <h3 class="footer__titulo">Redes Sociales</h3>
-                <a href="https://www.facebook.com/IglesiadeCristoPalabraVivayEficaz/" target="_blank">Página de la iglesia</a>
-                <a href="https://www.facebook.com/PastorLuisAifanD/" target="_blank">Perfil del Pastor</a>
-                <a href="https://www.facebook.com/Generacionpeniel.ministeriosebenezer" target="_blank">Página de Jóvenes</a>
-                <a href="https://www.youtube.com/channel/UC9t4SN1s5jdO0KJBUFflxJQ" target="_blank">Canal de YouTube</a>
+            <div>
+                <h3 class="font-semibold text-white">Enlaces rápidos</h3>
+                <div class="mt-4 grid gap-2 text-sm">
+                    <a class="footer-link" href="../index.html#inicio">Inicio</a>
+                    <a class="footer-link" href="../index.html#horarios">Horarios</a>
+                    <a class="footer-link" href="../index.html#contacto">Contacto</a>
+                    <a class="footer-link" href="Transmision.html">Transmisión en vivo</a>
+                    <a class="footer-link" href="Discipulado.html">Discipulado virtual</a>
+                </div>
             </div>
         </div>
-
-        <div class="footer__bloque">
-            <h2 class="footer__titulo">Enlaces Rápidos</h2>
-            <a href="#inicio">Inicio</a>
-            <a href="#horarios">Horarios</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-
-        <div class="footer__copy">
-            <p>© 2025 Iglesia de Cristo Palabra Viva y Eficaz. Todos los derechos reservados.</p>
+        <div class="border-t border-white/10 px-4 py-5 text-center text-sm text-slate-400">
+            © 2026 Iglesia de Cristo Palabra Viva y Eficaz. Todos los derechos reservados.
         </div>
     </footer>
 </body>
