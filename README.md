@@ -43,6 +43,10 @@ npm run dev
 
 El CSS fuente vive en `src/input.css` y el archivo compilado que sirve GitHub Pages queda en `dist/styles.css`.
 
+La tarjeta de próxima reunión usa JavaScript y la zona horaria `America/Guatemala` para mostrar el siguiente servicio del horario semanal. Para cambiar los horarios, edita la lista `meetings` en `scripts/site.js`.
+
+La página de discipulado carga la playlist mediante YouTube Data API desde `scripts/discipulado.js`. La clave se usa en el navegador; para probar la lista en `localhost`, ese origen debe estar permitido entre los referentes HTTP de la clave en Google Cloud. El enlace «Abrir playlist» queda disponible si la API no responde.
+
 ## Estructura
 
 ```text
@@ -53,7 +57,8 @@ Pagina-Iglesia/
 |   `-- Discipulado.html
 |-- Imagenes/
 |-- scripts/
-|   `-- site.js
+|   |-- site.js
+|   `-- discipulado.js
 |-- src/
 |   `-- input.css
 |-- dist/

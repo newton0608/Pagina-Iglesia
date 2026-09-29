@@ -9,6 +9,7 @@
     <meta name="keywords" content="Discipulado Virtual, Palabra Viva y Eficaz, Impartiendo la luz del entendimiento, Iglesia Barberena">
     <link rel="stylesheet" href="../dist/styles.css">
     <script defer src="../scripts/site.js"></script>
+    <script defer src="../scripts/discipulado.js"></script>
 </head>
 <body class="bg-stone-50 text-slate-900 antialiased">
     <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/90 shadow-lg shadow-slate-950/20 backdrop-blur">
@@ -46,24 +47,16 @@
 
         <section class="py-16">
             <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
-                    <div class="aspect-video bg-slate-900">
-                        <iframe
-                            class="h-full w-full"
-                            src="https://www.youtube.com/embed/videoseries?list=PLtN3SIZuaGTseOSxP9F3AJaoJPhMilY-h"
-                            title="Playlist de Discipulado Virtual"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                        <h2 class="font-serif text-2xl font-bold text-slate-950">Impartiendo la luz del entendimiento</h2>
+                        <p class="mt-2 text-slate-600">Elige un video para verlo aquí mismo.</p>
                     </div>
-                    <div class="grid gap-4 p-6 md:grid-cols-[1fr_auto] md:items-center">
-                        <div>
-                            <h2 class="font-serif text-2xl font-bold text-slate-950">Impartiendo la luz del entendimiento</h2>
-                            <p class="mt-2 text-slate-600">Reproduce la serie desde esta página o abre la playlist completa en YouTube.</p>
-                        </div>
-                        <a class="btn-dark" href="https://www.youtube.com/playlist?list=PLtN3SIZuaGTseOSxP9F3AJaoJPhMilY-h" target="_blank" rel="noreferrer">Abrir playlist</a>
-                    </div>
+                    <a class="btn-dark" href="https://www.youtube.com/playlist?list=PLtN3SIZuaGTseOSxP9F3AJaoJPhMilY-h" target="_blank" rel="noreferrer">Abrir playlist</a>
                 </div>
+                <p class="mt-8 text-slate-600" data-video-status role="status" aria-live="polite">Cargando videos...</p>
+                <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-video-list></div>
+                <button class="btn-dark mt-8 hidden disabled:cursor-wait disabled:opacity-60" type="button" data-load-more>Cargar más videos</button>
             </div>
         </section>
     </main>
